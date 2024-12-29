@@ -36,18 +36,37 @@ The AXIS system applies **state-of-the-art AI techniques** to mitigate risk and 
 - **Objective**: To expedite and automate the process of fraud detection for operational teams.
 - **Tech**: AI-powered workflow automation, Real-time alerts, Data visualization.
 
+---
+
+## Data Source
+
+The dataset used in this project is sourced from Kaggle, specifically the "Vehicle Claim Fraud Detection" dataset. It is derived from a real-world fraud detection case study originally used by Oracle for machine learning purposes. The dataset contains:
+
+- **33 columns** and **15,420 rows**.
+- **8 continuous features** and **24 categorical features**.
+- A binary label, `FraudFound_P` (0,1), indicating whether a claim is fraudulent (1) or not (0).
+
+This dataset provides a comprehensive basis for training and evaluating the fraud detection models within the AXIS system.
 
 ---
 
-## Technologies Used
+## Folder Structure
 
-- **Machine Learning (ML)**: TensorFlow, PyTorch, Scikit-learn, XGBoost
-- **Natural Language Processing (NLP)**: SpaCy, Hugging Face Transformers, NLTK
-- **Generative AI (Gen-AI)**: GPT-based models, Rule-based AI
-- **Data Science & Analytics**: Pandas, NumPy, Matplotlib, NetworkX
-- **Speech-to-Text**: Google Speech-to-Text API, CMU Sphinx
-- **Cloud Services**: AWS, Google Cloud Platform, Azure (for scalability and deployment)
-- **Databases**: PostgreSQL, MongoDB (for storing structured and unstructured data)
+The project is organized into the following directories:
+
+- **Data**: Contains all data-related files and scripts.
+  - **EDA**: Exploratory Data Analysis scripts and notebooks.
+  - **utilities**: Utility scripts for data processing.
+    - **ETL.py**: Script for Extract, Transform, Load processes.
+    - **__init__.py**: Initialization file for the utilities module.
+
+- **Models**: Contains model training and evaluation scripts.
+
+- **Notebooks**: Jupyter notebooks for experimentation and analysis.
+
+- **Scripts**: Standalone scripts for various tasks.
+
+- **Docs**: Documentation files and resources.
 
 ---
 
@@ -58,15 +77,14 @@ To set up the project on your local machine:
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/AXIS.git
-
-    ```
+   ```
 2. Go to the repository:
-    ```bash
-    cd AXIS
-    ```
+   ```bash
+   cd AXIS
+   ```
 3. Install the requirements:
    ```bash
    pip install -r requirements.txt
-    ```
+   ```
 
-This was inspired by a job advert by Domestic and General (D&G).
+This project was inspired by a job advert by Domestic and General (D&G).
